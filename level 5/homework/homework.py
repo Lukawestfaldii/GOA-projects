@@ -1,0 +1,5 @@
+print(10 + 10)
+print(50 - 10)
+print(5 * 2)
+print(50 / 5)
+print(100 // 2)
