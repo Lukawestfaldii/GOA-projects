@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Product List</h2>
+    <table>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Quantity</strong></th>
+            <th><strong>Price</strong></th>
+            <th><strong>Extended</strong></th>
+        </tr>
+        <tr>
+            <td>Hard Disk</td>
+            <td>1</td>
+            <td>500$</td>
+            <td>400$</td>
+        </tr>
+        <tr>
+            <td>Cd Drive</td>
+            <td>1</td>
+            <td>200$</td>
+            <td>500$</td>
+        </tr>
+        <tr>
+            <td>Cds</td>
+            <td>10</td>
+            <td>20$</td>
+            <td>50$</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="total">Total Amount</td>
+            <td class="total">950 $</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Info</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .flavor-row td {
+            text-align: left;
+        }
+        tfoot {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Product Info</caption>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Flavors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Milk</td>
+                <td>Almond</td>
+            </tr>
+            <tr class="flavor-row">
+                <td>Mango</td>
+            </tr>
+            <tr class="flavor-row">
+                <td>Chocolate</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">These are exclusive flavors</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request for White Paper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: calc(100% - 160px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 100px;
+        }
+        .required {
+            color: red;
+        }
+        .button-container {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .inline-input {
+            display: inline-block;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Request for White Paper</h2>
+    <p>Please fill out the form below. If you have any questions, please e-mail <a href="mailto:white_paper@ektron.com">white_paper@ektron.com</a>.</p>
+    <p><span class="required">*</span> - required fields</p>
+    <hr>
+    <form>
+        <label for="first-name"><span class="required">*</span>First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br>
+
+        <label for="last-name"><span class="required">*</span>Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required><br>
+
+        <label for="company-name">Company Name:</label>
+        <input type="text" id="company-name" name="company-name"><br>
+
+        <label for="website">Company/Personal Website:</label>
+        <input type="text" id="website" name="website"><br>
+
+        <label for="email"><span class="required">*</span>Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" class="inline-input">
+        <label for="ext" class="inline-input">Ext:</label>
+        <input type="text" id="ext" name="ext" class="inline-input"><br>
+
+        <label for="state">State/Province:</label>
+        <select id="state" name="state">
+            <option>Select for USA or Canada Only</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="ON">Ontario</option>
+            <option value="BC">British Columbia</option>
+            <!-- Add more options as needed -->
+        </select><br>
+
+        <label for="country"><span class="required">*</span>Country:</label>
+        <select id="country" name="country">
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+        </select><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea><br>
+
+        
+            <button type="submit">Request White Paper</button>
+        </div>
+    </form>
+</body>
+</html>
