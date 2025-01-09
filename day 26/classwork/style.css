@@ -1,0 +1,15 @@
+h1 {
+  text-transform: lowercase;
+  text-decoration: overline;
+}
+
+h2 {
+  color: chocolate;
+  font-family: cursive;
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+h3 {
+  text-shadow: 10px 15px 4px;
+}
