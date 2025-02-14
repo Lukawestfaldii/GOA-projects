@@ -1,0 +1,39 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+th {
+  background: #333;
+  color: white;
+}
+.blue {
+  background-color: #3498db;
+  color: white;
+}
+.green {
+  background-color: #2ecc71;
+  color: white;
+}
+.yellow {
+  background-color: #f1c40f;
+  color: black;
+}
+.red {
+  background-color: #e74c3c;
+  color: white;
+}
+.cyan {
+  background-color: #48c9b0;
+  color: white;
+}
+a {
+    text-decoration: none;
+    color: red;
+}
